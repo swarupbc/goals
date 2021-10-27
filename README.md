@@ -1,16 +1,39 @@
-# goals
+# Goals
+## Goal tracker | To-Do list | Budget management | Notes app built with flutter
 
-A new Flutter project.
+# Under Development
 
-## Getting Started
+## TODO
 
-This project is a starting point for a Flutter application.
+1. UI for To-Do, Budget management, & Notes
+2. Functionality for each sections
+3. Local storage functionality
+4. Local Notification for reminder
+5. Export & Import data
+6. Share achievement after completing goals
+7. Share notes as a text/pdf/word file
+8. Password or biometric authentication
+9. Multi user features (Not sure)
+10. UI improvements
+11. and more...
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Looking for contributors
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Fork and clone this project
+2. do your changes
+3. create a pull request
+
+
+## Description
+
+Open Source and completely offline application for privacy and security
+
+
+## Contribution
+
+Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome. The more is done the better it gets!
+
+## License
+
+Goals is Free Software: You can use, study share and improve it at your will
