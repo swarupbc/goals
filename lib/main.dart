@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:goals/views/screens/home_screen.dart';
-import 'package:goals/views/utils/constant.dart';
+import 'package:goals/views/utils/app_styles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Goals',
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: kBackgroundColor,
+        scaffoldBackgroundColor: AppStyles.backgroundColor,
       ),
       initialRoute: HomeScreen.id,
       routes: {

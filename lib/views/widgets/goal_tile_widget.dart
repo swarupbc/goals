@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:goals/models/goal_model.dart';
-import 'package:goals/views/utils/constant.dart';
+import 'package:goals/views/utils/app_styles.dart';
 
 class GoalTileWidget extends StatelessWidget {
   final GoalModel goal;
@@ -29,7 +29,7 @@ class GoalTileWidget extends StatelessWidget {
         onTap: () {},
         title: Text(
           goal.title,
-          style: kWhiteTitleStyle,
+          style: AppStyles.whiteTitleStyle,
         ),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -71,7 +71,7 @@ class GoalTileWidget extends StatelessWidget {
             }).toList();
           },
         ),
-        tileColor: kGoalBackgroundColor,
+        tileColor: AppStyles.goalBackgroundColor,
         horizontalTitleGap: 10.0,
         minVerticalPadding: 20.0,
       ),

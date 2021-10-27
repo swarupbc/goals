@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:goals/views/screens/goals_screen.dart';
 import 'package:goals/views/screens/todos_screen.dart';
-import 'package:goals/views/utils/constant.dart';
+import 'package:goals/views/utils/app_styles.dart';
+import 'package:goals/views/widgets/add_goal_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   static String id = '/home_screen';
@@ -13,6 +14,18 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _index = 0;
+
+  void _showAddItemWidget() {
+    showModalBottomSheet(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        isScrollControlled: true,
+        context: context,
+        builder: (builder) {
+          return _index == 0 ? const AddGoalWidget() : Container();
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
-          onPressed: () {},
+          onPressed: () {
+            _showAddItemWidget();
+          },
           child: Text(
             _index == 0 ? 'New Goal' : 'Add Task',
           ),
@@ -47,10 +62,10 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(
           _index == 0 ? "Goals" : "ToDos",
-          style: kMainGreenHeadingStyle,
+          style: AppStyles.mainGreenHeadingStyle,
         ),
         centerTitle: false,
-        backgroundColor: kBackgroundColor,
+        backgroundColor: AppStyles.backgroundColor,
         elevation: 0.0,
       ),
       endDrawer: const Drawer(),

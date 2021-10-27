@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goals/controllers/app_controllers.dart';
 import 'package:goals/models/goal_model.dart';
-import 'package:goals/views/utils/constant.dart';
+import 'package:goals/views/utils/app_styles.dart';
 import 'package:goals/views/widgets/goal_tile_widget.dart';
 
 class GoalsScreen extends StatefulWidget {
@@ -43,11 +43,11 @@ class _GoalsScreenState extends State<GoalsScreen> {
         children: [
           Container(
             width: double.infinity,
-            color: kBackgroundColor,
+            color: AppStyles.backgroundColor,
             padding: const EdgeInsets.only(bottom: 10.0, top: 20.0),
             child: Text(
               AppControllers.dateFormat.format(DateTime.now()),
-              style: kWhiteSubHeadingStyle,
+              style: AppStyles.whiteSubHeadingStyle,
             ),
           ),
           Expanded(
