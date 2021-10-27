@@ -34,6 +34,6 @@ Open Source and completely offline application for privacy and security
 
 Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome. The more is done the better it gets!
 
-## License
+## License (MIT)
 
 Goals is Free Software: You can use, study share and improve it at your will
